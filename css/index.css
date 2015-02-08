@@ -1,18 +1,94 @@
-<style>
 html {
+    width: 300px;
 }
+
 body {
-	height: 100%;
+    height: 100%;
 }
+
+/*The profile picture with border*/
 img {
-	max-width: 100%;
-	max-height: 79%;
-	overflow: hidden;
+    max-width: 90%;
+    max-height: 300px;
+    overflow: hidden;
+    padding: 5px;
+    border: 15px;
+    border-style: groove;
+    border-color: #960;
 }
-h1 {
+
+/*Border*/
+#image {
+    text-align: center;
+
+}
+
+/*Background color & font*/
+body {
+    background: #eee;
+    padding: 0px;
+    font-family: "Georgia", "Times New Roman", serif;
+}
+
+/*Header ("iM8")*/
+#title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 3px 3px #a9a9a9;
+}
+
+
+
+/*Centering the pirate's name (link) */
+a.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+        
+}
+
+/*Font size and color to pirate's name*/
+#name {
+    text-align: center;
+    font-size: 50px;
+    font-variant: small-caps;
+    color: #900;
+    text-decoration: underline;
+}
+
+
+/*Centering and italicizing the pirate's bio*/
+#description {
+    text-align: center;
+    font-style: italic;
+}
+
+
+/*Left side*/
+#no{
+	opacity: .3;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    font-size: 9px; 
+}
+
+
+
+/*Right side button ("i'd M8 with u")**/
+#yes{
+	opacity: .3;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height:80px;
+    font-size: 10px;
+}
+
+.center {
 	text-align: center;
 }
-button {
-	position: relative;
-}
-</style>
