@@ -7,20 +7,20 @@ body {
         height: 100%;
 }
 
-/*The actual picture...HOW DO WE CENTER IT?!?!*/
+/*The profile picture with border*/
 img {
-        max-width: 95%;
+        max-width: 90%;
         max-height: 300px;
         overflow: hidden;
-        padding: 2px;
-        border: 10px;
-        border-style: solid;
+        padding: 5px;
+        border: 15px;
+        border-style: groove;
         border-color: #960;
 }
 
 /*Border*/
 #image {
-        
+        text-align: center;
 
 }
 
@@ -32,12 +32,14 @@ body {
 }
 
 /*Header ("iM8")*/
-h1 {
+#title {
         text-align: center;
         font-size: 60px;
         font-weight: bold;
         text-shadow: 3px 3px #a9a9a9;
 }
+
+
 
 /*Centering the pirate's name (link) */
 a.center {
@@ -61,27 +63,30 @@ a.center {
 #description {
         text-align: center;
         font-style: italic;
-
 }
 
-/*Right side button ("i'd M8 with u")*/
-button.right{
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 100px;
-        height:50px;
-}
 
-/*Left side button ("avast ye m8-y")*/
-button.left{
+/*Left side*/
+#no{
         position: fixed;
         bottom: 20px;
         left: 20px;
-        width: 100px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
+        font-size: 60px; 
 }
 
+
+/*Right side button ("i'd M8 with u")**/
+#yes{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 80px;
+        height:80px;
+        font-size: 60px;
+
+}
 
 
 
