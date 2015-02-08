@@ -14,6 +14,11 @@ img {
 >>>>>>> minghorn/master
 }
 
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
 body {
         background: #eee;
         padding: 15px;
@@ -26,24 +31,41 @@ h1 {
         font-style: bold;
 }
 
-a {
+a.center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
         
-        color: #900;
 }
 
 #description {
         text-align: center;
         font-style: italic;
+
 }
 
 #name {
         text-align: center;
         font-size: 50px;
         font-variant: small-caps;
+        color: #900;
+        text-decoration: underline;
 }
 
 #image {
         vertical-align: center;
+}
+
+button.right{
+        float: right;
+        width: 90px;
+        height:40px;
+}
+
+button.left{
+        float: left;
+        width: 90px;
+        height:40px;
 }
 <<<<<<< HEAD
 
