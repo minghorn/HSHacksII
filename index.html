@@ -3,11 +3,6 @@
 <head>
 	<Content-Type: text/html; charset=utf-8>
 	<link rel="stylesheet" href = "css/index.css"/>
-
-	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script src = "js/index.js"></script>
-
 <head>
 <body>
 	<div id = "title">iM8-y</div>
@@ -19,14 +14,14 @@
 	<button id = "no" class="left">&#9760;</button>
 	<button id = "yes" class="right">&#9829;</button>
 	<div id = "sound"></div>
-
-
 	
 	<script type="text/javascript">
 		var i = 0;
 		var j = 0;
+		var yesArray = [];
+		var noArray = [];
 		swipe(i);
-		i++;
+		//i++;
 		
 		document.getElementById("yes").addEventListener("click", function(){
 			if(i >= 15){
@@ -34,15 +29,17 @@
 			};
 			if(j > 2){
 				j = 0;
-			}
-			swipe(i);
+			};
+			
 			yes(j);
 			document.getElementById("description").innerHTML = "";
+			addYes(yesArray, i);			
 			i++;
 			j++;
+			swipe(i);
 		});
 		document.getElementById("name").addEventListener("click", function(){
-			profile(i-1);
+			profile(i);
 		});
 		document.getElementById("no").addEventListener("click", function(){
 			if(i >= 15){
@@ -51,13 +48,19 @@
 			if(j > 2){
 				j = 0;
 			}
-			swipe(i);
+			
 			no(j);
 			document.getElementById("description").innerHTML = "";
+			addNo(noArray, i);
 			i++;
 			j++;
+			swipe(i);
+		});
+		document.getElementById("lists").addEventListener("click", function(){
+			document.getElementById("sidebar").innerHTML = "<p> Yeses:" + yesArray + "</p><p> Nos:" + noArray + "</p>";
 		});
 
 	</script>
+</div>
 <body>
 </html>

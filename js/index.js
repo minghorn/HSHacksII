@@ -28,24 +28,33 @@ var neg = [neg1, neg2, neg3];
 function profile(i){
 	var people = [person1, person2, person3, person4, person5, person6, person7, person8, person9, person10, person11, person12, person13, person14, person15];
 	var name = people[i]["firstName"] +" "+ people[i]["lastName"];
+
 	document.getElementById("description").innerHTML = ("<p>" + people[i]["age"] + ", "+ people[i]["gender"] + ": " + people[i]["description"] + "</p>" + "<p>" + people[i]["tags"] + "</p>");
-}
+};
+
 function swipe(i){
 	var people = [person1, person2, person3, person4, person5, person6, person7, person8, person9, person10, person11, person12, person13, person14, person15];
 	var name = people[i]["firstName"] +" "+ people[i]["lastName"];
 	document.getElementById("image").innerHTML = ("<img src ='" + people[i]["img"] + "'/>")
 	document.getElementById("name").innerHTML = (name);
 	document.getElementById("sound").innerHTML = "";
-}
+};
 function no(j){
 	var neg = [neg1, neg2, neg3];
 	document.getElementById("sound").innerHTML = ("<audio autoplay> <source src ='" + neg[j] + "' type = 'audio/wav'/></audio>");
-}
+};
 function yes(j){
 	var pos = [pos1, pos2, pos3];
 	document.getElementById("sound").innerHTML = ("<audio autoplay> <source src ='" + pos[j] + "' type = 'audio/wav'/></audio>");
-}
-
+};
+function addYes(array, i){
+	var people = [person1, person2, person3, person4, person5, person6, person7, person8, person9, person10, person11, person12, person13, person14, person15];
+	array.push(people[i]["firstName"] + " " + people[i]["lastName"]);
+};
+function addNo(array, i){
+	var people = [person1, person2, person3, person4, person5, person6, person7, person8, person9, person10, person11, person12, person13, person14, person15];
+	array.push(people[i]["firstName"] + " "+ people[i]["lastName"]);
+};
 
 
 
