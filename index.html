@@ -1,1 +1,28 @@
-Starting yay
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href = "css/index.css"/>
+
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src = "js/index.js"></script>
+<head>
+<body>
+	<h1>iM8-y</h1>
+	<div id = "image"></div>
+	<a href= "#" id = "name"></a>
+	<div id = "description"></div>
+	<button id = "change">click</button>
+	<script type="text/javascript">
+		var i = 0;
+		document.getElementById("change").addEventListener("click", function(){
+			swipe(i);
+			document.getElementById("description").innerHTML = "";
+			i++;
+		});
+		document.getElementById("name").addEventListener("click", function(){
+			profile(i-1);
+		});
+	</script>
+<body>
+</html>
