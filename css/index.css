@@ -69,7 +69,7 @@ a.center {
 /*Left side*/
 #no{
         position: fixed;
-        bottom: 20px;
+        bottom: 30px;
         left: 20px;
         width: 80px;
         height: 80px;
@@ -81,7 +81,7 @@ a.center {
 /*Right side button ("i'd M8 with u")**/
 #yes{
         position: fixed;
-        bottom: 20px;
+        bottom: 30px;
         right: 20px;
         width: 80px;
         height:80px;
