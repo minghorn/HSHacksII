@@ -14,6 +14,17 @@ var person13 = {firstName:"Foreign", lastName:"Beauty", age:50, gender:"m", desc
 var person14 = {firstName:"Mermaid", lastName:"Ariel", age:14, gender:"f", description:"Looking for a 20+ year old prince charming preferably without another girl but we can (t)werk out the details", tags:"#nolongerunderthesea", img:"img/person14.png"};
 var person15 = {firstName:"John", lastName:"Doe", age:35, gender:"m", description:"Crazy for love and crazy about life", tags:"#manofmystery", img:"img/person15.png"};
 
+var neg1 = "sounds/lillyliveredlandlubbers.wav";
+var neg2 = "sounds/theplank.wav";
+var neg3 = "sounds/yescurrvyscum.wav";
+
+var pos1 = "sounds/ahoyyematey.wav";
+var pos2 = "sounds/ayeayecapn.wav";
+var pos3 = "sounds/yourbooty.wav";
+
+var pos = [pos1, pos2, pos3];
+var neg = [neg1, neg2, neg3];
+
 function profile(i){
 	var people = [person1, person2, person3, person4, person5, person6, person7, person8, person9, person10, person11, person12, person13, person14, person15];
 	var name = people[i]["firstName"] +" "+ people[i]["lastName"];
@@ -24,6 +35,15 @@ function swipe(i){
 	var name = people[i]["firstName"] +" "+ people[i]["lastName"];
 	document.getElementById("image").innerHTML = ("<img src ='" + people[i]["img"] + "'/>")
 	document.getElementById("name").innerHTML = (name);
+	document.getElementById("sound").innerHTML = "";
+}
+function no(j){
+	var neg = [neg1, neg2, neg3];
+	document.getElementById("sound").innerHTML = ("<audio autoplay> <source src ='" + neg[j] + "' type = 'audio/wav'/></audio>");
+}
+function yes(j){
+	var pos = [pos1, pos2, pos3];
+	document.getElementById("sound").innerHTML = ("<audio autoplay> <source src ='" + pos[j] + "' type = 'audio/wav'/></audio>");
 }
 
 

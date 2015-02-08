@@ -1,36 +1,45 @@
 <style>
 html {
-<<<<<<< HEAD
         width: 300px;
-=======
 }
+
 body {
-	height: 100%;
+        height: 100%;
 }
+
+/*The actual picture...HOW DO WE CENTER IT?!?!*/
 img {
-	max-width: 100%;
-	max-height: 79%;
-	overflow: hidden;
->>>>>>> minghorn/master
+        max-width: 95%;
+        max-height: 300px;
+        overflow: hidden;
+        padding: 2px;
+        border: 10px;
+        border-style: solid;
+        border-color: #960;
 }
 
-img.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto }
+/*Border*/
+#image {
+        
 
+}
+
+/*Background color & font*/
 body {
         background: #eee;
-        padding: 15px;
+        padding: 0px;
         font-family: "Georgia", "Times New Roman", serif;
 }
 
+/*Header ("iM8")*/
 h1 {
         text-align: center;
-        font-size: 40px;
-        font-style: bold;
+        font-size: 60px;
+        font-weight: bold;
+        text-shadow: 3px 3px #a9a9a9;
 }
 
+/*Centering the pirate's name (link) */
 a.center {
         margin-left: auto;
         margin-right: auto;
@@ -38,12 +47,7 @@ a.center {
         
 }
 
-#description {
-        text-align: center;
-        font-style: italic;
-
-}
-
+/*Font size and color to pirate's name*/
 #name {
         text-align: center;
         font-size: 50px;
@@ -52,26 +56,33 @@ a.center {
         text-decoration: underline;
 }
 
-#image {
-        vertical-align: center;
+
+/*Centering and italicizing the pirate's bio*/
+#description {
+        text-align: center;
+        font-style: italic;
+
 }
 
+/*Right side button ("i'd M8 with u")*/
 button.right{
-        float: right;
-        width: 90px;
-        height:40px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 100px;
+        height:50px;
 }
 
+/*Left side button ("avast ye m8-y")*/
 button.left{
-        float: left;
-        width: 90px;
-        height:40px;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        width: 100px;
+        height: 50px;
 }
-<<<<<<< HEAD
 
-=======
-button {
-	position: relative;
-}
->>>>>>> minghorn/master
+
+
+
 </style>
