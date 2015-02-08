@@ -12,16 +12,25 @@
 	<div id = "image"></div>
 	<a href= "#" id = "name"></a>
 	<div id = "description"></div>
-	<button id = "change">click</button>
+	<button id = "no">Nope</button>
+	<button id = "yes">iM8-y</button>
+	
 	<script type="text/javascript">
 		var i = 0;
-		document.getElementById("change").addEventListener("click", function(){
+		swipe(i);
+		i++;
+		document.getElementById("yes").addEventListener("click", function(){
 			swipe(i);
 			document.getElementById("description").innerHTML = "";
 			i++;
 		});
 		document.getElementById("name").addEventListener("click", function(){
 			profile(i-1);
+		});
+		document.getElementById("no").addEventListener("click", function(){
+			swipe(i);
+			document.getElementById("description").innerHTML = "";
+			i++;
 		});
 	</script>
 <body>
