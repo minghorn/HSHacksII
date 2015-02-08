@@ -15,14 +15,14 @@ var person13 = {firstName:"Foreign", lastName:"Beauty", age:50, gender:"m", desc
 var person14 = {firstName:"Mermaid", lastName:"Ariel", age:14, gender:"f", description:"Looking for a 20+ year old prince charming preferably without another girl but we can (t)werk out the details", tags:"#nolongerunderthesea"};
 var person15 = {firstName:"John", lastName:"Doe", age:35, gender:"m", description:"Crazy for love and crazy about life", tags:"#manofmystery"};
 
-
+function test(){
+	$("#name").append("<p>" + people[0] + "</p>");
+}
 function profile(){
-	for(int i = 0; i < people.length;){
-		var name = people[i].firstName +" "+ people[i].lastName;
+		var name = people[0].firstName +" "+ people[0].lastName;
 		$("#name").append("<h1>" + name + "</h1>");
-		$("#description").append("<p>" + people[i].age + "</p>"+ "<p>" + people[i].gender + "</p>"+"<p>" + people[i].description + "</p>" + "<p>" + people[i].tags + "</p>");
-	}
-};
+		$("#description").append("<p>" + people[0].age + "</p>"+ "<p>" + people[0].gender + "</p>"+"<p>" + people[0].description + "</p>" + "<p>" + people[0].tags + "</p>");
+}
 
 
 
