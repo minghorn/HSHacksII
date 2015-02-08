@@ -13,13 +13,17 @@
 	<a href= "#" id = "name"></a>
 	<div id = "description"></div>
 	<button id = "no">Nope</button>
-	<button id = "yes">iM8-y</button>
+	<button id = "yes">iM8</button>
 	
 	<script type="text/javascript">
 		var i = 0;
 		swipe(i);
 		i++;
+		
 		document.getElementById("yes").addEventListener("click", function(){
+			if(i >= 15){
+				i = 0;
+			};
 			swipe(i);
 			document.getElementById("description").innerHTML = "";
 			i++;
@@ -28,6 +32,9 @@
 			profile(i-1);
 		});
 		document.getElementById("no").addEventListener("click", function(){
+			if(i >= 15){
+				i = 0;
+			};
 			swipe(i);
 			document.getElementById("description").innerHTML = "";
 			i++;
