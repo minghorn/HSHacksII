@@ -14,9 +14,11 @@
 	<div id = "description"></div>
 	<button id = "no">Nope</button>
 	<button id = "yes">iM8</button>
+	<div id = "sound"></div>
 	
 	<script type="text/javascript">
 		var i = 0;
+		var j = 0;
 		swipe(i);
 		i++;
 		
@@ -24,9 +26,14 @@
 			if(i >= 15){
 				i = 0;
 			};
+			if(j > 2){
+				j = 0;
+			}
 			swipe(i);
+			yes(j);
 			document.getElementById("description").innerHTML = "";
 			i++;
+			j++;
 		});
 		document.getElementById("name").addEventListener("click", function(){
 			profile(i-1);
@@ -35,9 +42,14 @@
 			if(i >= 15){
 				i = 0;
 			};
+			if(j > 2){
+				j = 0;
+			}
 			swipe(i);
+			no(j);
 			document.getElementById("description").innerHTML = "";
 			i++;
+			j++;
 		});
 	</script>
 <body>
