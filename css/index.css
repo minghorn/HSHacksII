@@ -1,8 +1,38 @@
 <style>
 html {
-	width: 300px;
+        width: 300px;
 }
+
+body {
+        background: #eee;
+        padding: 15px;
+        font-family: "Georgia", "Times New Roman", serif;
+}
+
 h1 {
-	text-align: center;
+        text-align: center;
+        font-size: 40px;
+        font-style: bold;
 }
+
+a {
+        
+        color: #900;
+}
+
+#description {
+        text-align: center;
+        font-style: italic;
+}
+
+#name {
+        text-align: center;
+        font-size: 50px;
+        font-variant: small-caps;
+}
+
+#image {
+        vertical-align: center;
+}
+
 </style>
